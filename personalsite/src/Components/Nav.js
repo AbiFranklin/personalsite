@@ -1,18 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+//import ReactDOM from 'react-dom'
 import { Menu, Dropdown, Icon } from 'antd';
-//import NavMenu from './Menu'
+import { Link } from 'react-router-dom'
 
 const menu = () => (
   <Menu>
-  <Menu.Item>
-      About Abi
+  <Menu.Item className="navmenu">
+      <Link to="/">About Abi</Link>
   </Menu.Item>
-  <Menu.Item>
-    Portfolio
+  <Menu.Item className="navmenu">
+    <Link to="/portfolio">Portfolio</Link>
   </Menu.Item>
-  <Menu.Item>
-    Contact
+  <Menu.Item className="navmenu">
+    <Link to="/contact">Contact</Link>
   </Menu.Item>
 </Menu>
 )
