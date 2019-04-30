@@ -1,20 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Popover, Menu, MenuItem, Button, Position } from '@blueprintjs/core'
+import { Menu, Dropdown, Icon } from 'antd';
+//import NavMenu from './Menu'
 
+const menu = () => (
+  <Menu>
+  <Menu.Item>
+      About Abi
+  </Menu.Item>
+  <Menu.Item>
+    Portfolio
+  </Menu.Item>
+  <Menu.Item>
+    Contact
+  </Menu.Item>
+</Menu>
+)
 
-export default class Nav extends React.Component {
-  render () {
-    return <div>
-      <Popover content={
-        <Menu large={true}>
-        <Menu>About Abi</Menu>
-        <Menu>Portfolio</Menu>
-        <Menu>Contact</Menu>
-        </Menu>
-       } position={Position.CENTER_TOP}>
-        <Button icon="menu" />
-      </Popover>
-    </div>
-  }
-}
+const Nav = () => (
+  <Dropdown overlay={menu}>
+      <Icon type="menu" className="navicon"/>
+    </Dropdown>
+)
+
+  export default Nav
