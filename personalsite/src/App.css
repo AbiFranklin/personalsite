@@ -15,6 +15,61 @@ p {
   font-size: 1.6em;
 }
 
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+}
+
+/*About*/
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.aboutLeft {
+  width: 45%;
+}
+
+.aboutRight {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.wordmarkUpper {
+  font-family: 'Crete Round', serif;
+  font-size: 7.2em;
+}
+
+.wordmarkLower {
+  font-size: 3.6em;
+  text-align: right;
+  margin-top: -15px;
+}
+
+.missionStatement {
+  width: 90%;
+  align-self: flex-start;
+  font-size: 2.4em;
+  margin-top: 50px;
+}
+
+.skills {
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
+.skills h1 {
+  font-size: 4.8em;
+}
+
+/*Nav*/
 .navicon svg {
   width: 25px;
   height: 25px;
