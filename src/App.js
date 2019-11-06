@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import './App.css'
-import arrow from './downArrow.svg'
 import typeracer from './typeracer.png'
 import schmidthaus from './schmidthaus.png'
 import linkedin from './linkedin.png'
 import github from './github.png'
+import Landing from './Components/Landing'
 
 let heights = ["35vh", "40vh", "45vh", "50vh"]
 let top = ["5%", "7.5%", "10%"]
@@ -57,15 +57,9 @@ const App = () => (
         pin>
         <Timeline
           wrapper={<div id="pinContainer" />}>
-          <section className="panel blue">
-            <div className="introLeft">
-            </div>
-            <div className="introRight">
-              <h1>Abigayle Franklin</h1>
-              <h2>Full Stack Developer</h2>
-              <img src={arrow} />
-            </div>
-          </section>
+
+            <Landing />
+
           <Tween
             from={{ x: '-100%' }}
             to={{ x: '0%' }}

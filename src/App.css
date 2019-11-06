@@ -22,8 +22,10 @@ p {
 .introLeft {
   background: url('./abiheadshot.png');
   background-size: cover;
+  background-position: -10px;
   height: 100%;
   width: 50%;
+  background-repeat: no-repeat;
 }
 
 .introRight {
@@ -49,10 +51,18 @@ p {
   animation-iteration-count: infinite;
 }
 
+
+
 @keyframes arrow {
   0%   {bottom:-45%;}
   100%   {bottom:-50%;}
 
+}
+
+h3 {
+  position: absolute;
+  opacity: .2;
+  font-size: 3.4rem;
 }
 
 .blue {
