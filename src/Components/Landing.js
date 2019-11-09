@@ -4,7 +4,7 @@ import arrow from '../downArrow.svg'
 class Landing extends React.Component{
     render(){
         return(
-            <section className="panel blue">
+            <section className="panel landing">
                 <div className="introLeft">
                 </div>
                 <div className="introRight">
