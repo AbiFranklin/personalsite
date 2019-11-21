@@ -9,9 +9,8 @@ import scratchmap from './scratchmap.png'
 import linkedin from './linkedin.png'
 import github from './github.png'
 import Landing from './Components/Landing'
+import Blog from './Components/Blog'
 
-let heights = ["35vh", "40vh", "45vh", "50vh"]
-let top = ["5%", "7.5%", "10%"]
 const SectionWipes2Styled = styled.div`
   overflow: hidden;
   #pinContainer {
@@ -111,36 +110,6 @@ const App = () => (
                 Stack React, Flask, PostgreSQL</p>
                 </div>
                 </a>
-                <a href="" target="_blank">
-                <div className="port">
-                <img src="https://picsum.photos/200/300"/>
-                <p>Project: Want It <br/>
-                Team Size: 3 <br/>
-                Role: Owner/Front End Developer <br/>
-                Build Time: 48 hours<br/>
-                Stack: React, Node.js, PostgreSQL</p>
-                </div>
-                </a>
-                <a href="https://www.theschmidthaus.org/" target="_blank">
-                <div className="port">
-                <img src="https://picsum.photos/200/300"/>
-                <p>Project: Teresa Hunter Photography <b/>
-                Team Size: 1 <b/>
-                Role: Developer <b/>
-                Build Time: 4 weeks<b/>
-                Stack: React</p>
-                </div>
-                </a>
-                <a href="" target="_blank">
-                <div className="port">
-                <img src="https://picsum.photos/200/300"/>
-                <p>Project: Vacation Planner <b/>
-                Team Size: 5 <b/>
-                Role: Back End Developer <b/>
-                Build Time: 2 month<b/>
-                Stack: React, Node.js, PostgreSQL</p>
-                </div>
-                </a>
               </div>
             </section>
           </Tween>
@@ -149,12 +118,14 @@ const App = () => (
             to={{ y: '0%' }}
           >
             <section className="panel contact">
-            <span>
               <h1>Contact</h1>
-              abifranklin@gmail.com<br/>
-              <img src={linkedin} />
-              <img src={github} />
-            </span>
+              <p>abifranklin@gmail.com</p><br/>
+              <br/>
+              <a href='https://loving-bhabha-e247bb.netlify.com/' target='_blank'><h2>Developer Blog</h2></a>
+              <div className='links'>
+              <a href='https://www.linkedin.com/in/abi-franklin/' target='_blank'><img src={linkedin} width='100px'/></a>
+              <a href='https://github.com/AbiFranklin' target='_blank'><img src={github} width='100px'/></a>
+              </div>
             </section>
           </Tween>
         </Timeline>
